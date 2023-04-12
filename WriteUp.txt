@@ -1,0 +1,19 @@
+BatchParticipantRelation Project Writeup
+Overview
+The BatchParticipantRelation project is a Java program that allows the user to create and manage batches of participants. The project consists of three classes: Batch, Participant, and mainClass.
+
+The Batch class contains information about the batch, including a list of participants. The Participant class contains information about a participant, including their name, age, and ID number. The mainClass class is the main entry point for the program and allows the user to create and manage batches of participants.
+
+Batch Class
+The Batch class contains information about a batch, including its name and a list of participants. The class has two static ArrayLists: participantsMorning and participantsEvening. The class has two methods for adding a participant to the appropriate list: addParticipantMorning and addParticipantEvening.
+
+Both methods take a Participant object as a parameter and check if the participant already exists in the other list. If the participant already exists in the other list, the method returns a message saying that the participant already exists. If the participant does not exist in the other list, the method adds the participant to the appropriate list and returns a message saying that the participant has been added.
+
+Participant Class
+The Participant class contains information about a participant, including their name, age, and ID number. The class has a constructor that takes three parameters: name, age, and Id. The class also has a get method that returns a string containing the participant's name, age, and ID number.
+
+mainClass Class
+The mainClass class is the main entry point for the program. The class creates two Batch objects: participantsMorning and participantsEvening. The class prompts the user to enter the number of participants and then loops through that number of times, prompting the user to enter the name, age, ID number, and batch of each participant. If the batch is "Morning", the class creates a Participant object and adds it to the participantsMorning list. If the batch is "Evening", the class creates a Participant object and adds it to the participantsEvening list. If the batch is anything else, the class outputs an error message.
+
+Conclusion
+The BatchParticipantRelation project is a simple Java program that demonstrates how to create and manage batches of participants. The project uses three classes: Batch, Participant, and mainClass. The Batch class contains information about the batch, including its name and a list of participants. The Participant class contains information about a participant, including their name, age, and ID number. The mainClass class is the main entry point for the program and allows the user to create and manage batches of participants. Overall, the project provides a good example of how to use object-oriented programming principles in a practical application.
